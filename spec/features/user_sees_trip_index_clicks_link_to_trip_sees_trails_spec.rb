@@ -5,7 +5,11 @@ require 'rails_helper'
        trip = Trip.create(name: "Super fun")
        trail = trip.trails.create(length: 234, name: "big bend", address: "1234 Jacksonville, FL" )
 
+       visit trips_path
 
-       t.integer "length"
-       t.string "name"
-       t.string "address"
+      click_link("Super fun")
+
+      expect(curent_path).to eq trip_path(trip)
+
+     end
+end
