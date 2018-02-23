@@ -11,5 +11,7 @@ require 'rails_helper'
 
       expect(curent_path).to eq trip_path(trip)
 
+      
+
      end
 end
