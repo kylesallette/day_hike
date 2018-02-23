@@ -1,3 +1,7 @@
-<% @trips.trails.each do |trail| %></p>
+<% @trip.trails.each do |trail| %></p>
       <%= trail.name %>
+      <%= trail.length  %>
+      <%= trail.address %>
+      <%= @trip.total_length %>
+
       <% end %>
